@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/Frame 1.webp" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="offers.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" id="logo" href="#"><img src="/logo1.webp" alt="desiWear-logo"></a>
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" name="search" id="nav-search" placeholder="Search for Product, style">
+                <div class="line"></div>
+                <i class="fa-regular fa-camera"></i>
+            </div>
+            <div class="nav-icon">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+                <i class="fa-solid fa-user" id="profileBtn"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="dropdown" id="dropdownMenu">
+            <div id="notLoggedIn">
+                <h4>Welcome</h4>
+                <p>To access account and manage orders</p>
+                <a href="#" class="login-btn" onclick="login()">LOGIN / SIGNUP</a>
+            </div>
+
+            <div id="loggedIn" style="display: none;">
+                <h4>Hello, <span id="userName">Suraj</span>!</h4>
+                <p>Manage your account</p>
+            </div>
+
+            <a href="#" class="menu-link">Orders</a>
+            <a href="#" class="menu-link">Wishlist</a>
+            <a href="#" class="menu-link">Gift Cards</a>
+            <a href="#" class="menu-link">Contact Us</a>
+
+            <div class="divider"></div>
+
+            <a href="#" class="menu-link">Coupons</a>
+            <a href="#" class="menu-link">Saved Cards</a>
+            <a href="#" class="menu-link">Saved VPA</a>
+            <a href="#" class="menu-link">Saved Addresses</a>
+        </div>
+    </header>
+
+    <section class="offers">
+        <h2>Comming soon....!</h2>
+    </section>
+
+    <script src="offers.js"></script>
+</body>
+</html>

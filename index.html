@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/Frame 1.webp" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DesiWear</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="logo" id="logo" href="#"><img src="/logo1.webp" alt="desiWear-logo"></a>
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" name="search" id="nav-search" placeholder="Search for Product, style">
+                <div class="line"></div>
+                <i class="fa-regular fa-camera"></i>
+            </div>
+            <div class="nav-icon">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+                <i class="fa-solid fa-user" id="profileBtn"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        <div class="dropdown" id="dropdownMenu">
+            <div id="notLoggedIn">
+                <h4>Welcome</h4>
+                <p>To access account and manage orders</p>
+                <a href="#" class="login-btn" onclick="login()">LOGIN / SIGNUP</a>
+            </div>
+
+            <div id="loggedIn" style="display: none;">
+                <h4>Hello, <span id="userName">Suraj</span>!</h4>
+                <p>Manage your account</p>
+            </div>
+
+            <a href="#" class="menu-link">Orders</a>
+            <a href="#" class="menu-link">Wishlist</a>
+            <a href="#" class="menu-link">Gift Cards</a>
+            <a href="#" class="menu-link">Contact Us</a>
+
+            <div class="divider"></div>
+
+            <a href="#" class="menu-link">Coupons</a>
+            <a href="#" class="menu-link">Saved Cards</a>
+            <a href="#" class="menu-link">Saved VPA</a>
+            <a href="#" class="menu-link">Saved Addresses</a>
+        </div>
+    </header>
+
+    <section class="catogri">
+        <div class="item-box">
+
+            <a href="/offers.html" class="item">
+                <img src="./image/top-offers.webp" alt="top-offers">
+                <p>Top-offers</p>
+            </a>
+            <a href="#" class="item">
+                <img src="./image/Jins.webp" alt="jins">
+                <p>Jins</p>
+            </a>
+            <a href="#" class="item">
+                <img src="./image/Shorts.webp" alt="shorts">
+                <p>Shorts</p>
+            </a>
+            <a href="#" class="item">
+                <img src="./image/Baggy.webp" alt="Baggy">
+                <p>Baggy</p>
+            </a>
+            <a href="#" class="item">
+                <img src="./image/Top.webp" alt="Top">
+                <p>Top</p>
+            </a>
+            <a href="#" class="item">
+                <img src="./image/T-shirt.webp" alt="t-shirt">
+                <p>T-shirt</p>
+            </a>
+            <a href="#" class="item">
+                <img src="./image/shirt.webp" alt="shirt">
+                <p>Shirt</p>
+            </a>
+            <a href="#" class="item">
+                <img src="./image/Combo.webp" alt="combo">
+                <p>Combo</p>
+            </a>
+
+        </div>
+    </section>
+
+    <section class="scroll">
+        <div class="slider">
+            <img src="./image/1.webp" class="slide active">
+            <img src="./image/2.webp" class="slide">
+            <img src="./image/3.webp" class="slide">
+        </div>
+    </section>
+
+    <section class="women">
+        <h2>WOMEN</h2>
+        <div class="women-cloths">
+
+            <div class="product-card">
+                <img src="./Women/1.webp" alt="Dress" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">Women's High Rise Loose Fit Blue Jeans</div>
+                    <div class="price-row">
+                        <div class="price">₹449</div>
+                        <div class="old-price">₹499</div>
+                        <div class="discount">10% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Women/2.webp" alt="Red Dress" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">Women's Black Loose Fit High Rise Jeans</div>
+                    <div class="price-row">
+                        <div class="price">₹349</div>
+                        <div class="old-price">₹399</div>
+                        <div class="discount">10% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Women/4.webp" alt="Red Dress" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">Women's Mid Rise Pink Regular Fit Shorts</div>
+                    <div class="price-row">
+                        <div class="price">₹249</div>
+                        <div class="old-price">₹499</div>
+                        <div class="discount">40% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Women/3.webp" alt="Red Dress" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">Women's High Rise Loose Fit Blue Jeans</div>
+                    <div class="price-row">
+                        <div class="price">₹349</div>
+                        <div class="old-price">₹499</div>
+                        <div class="discount">30% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="product-card">
+                <img src="./Women/5.webp" alt="Dress" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">Women's Brand Logo Crew Neck Top</div>
+                    <div class="price-row">
+                        <div class="price">₹249</div>
+                        <div class="old-price">₹299</div>
+                        <div class="discount">10% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Women/6.webp" alt="Red Dress" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">Women's Mid Rise Light Blue Regular Fit Denim Skirt</div>
+                    <div class="price-row">
+                        <div class="price">₹250</div>
+                        <div class="old-price">₹499</div>
+                        <div class="discount">50% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Women/7.webp" alt="Dress" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">Women's 711 Blue Skinny Fit Mid Rise Jeans</div>
+                    <div class="price-row">
+                        <div class="price">₹699</div>
+                        <div class="old-price">₹3499</div>
+                        <div class="discount">60% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Women/8.webp" alt="Dress" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">Women's Paisley Blue Band Neck Mini Denim Dress</div>
+                    <div class="price-row">
+                        <div class="price">₹549</div>
+                        <div class="old-price">₹999</div>
+                        <div class="discount">30% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Women/9.webp" alt="Dress" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">Women's Mid Rise Pink Tapered Cargo Trousers</div>
+                    <div class="price-row">
+                        <div class="price">₹349</div>
+                        <div class="old-price">₹499</div>
+                        <div class="discount">20% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Women/10.webp" alt="Dress" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">Women's Floral Blue Square Neck Corset Top</div>
+                    <div class="price-row">
+                        <div class="price">₹349</div>
+                        <div class="old-price">₹699</div>
+                        <div class="discount">50% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="men">
+        <h2>MEN</h2>
+        <div class="men-cloths">
+
+            <div class="product-card">
+                <img src="./Men/4.webp" alt="tshirt" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">Men's Khaki Straight Fit Cargo Trousers</div>
+                    <div class="price-row">
+                        <div class="price">₹449</div>
+                        <div class="old-price">₹599</div>
+                        <div class="discount">30% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Men/purple shirt.webp" alt="shirt" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">'s SolMenid Slim Fit Shirt</div>
+                    <div class="price-row">
+                        <div class="price">₹249</div>
+                        <div class="old-price">₹499</div>
+                        <div class="discount">10% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Men/white-Shirt.webp" alt="tshirt" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">Men's Redloop Solid Slim Fit Shirt</div>
+                    <div class="price-row">
+                        <div class="price">₹249</div>
+                        <div class="old-price">₹499</div>
+                        <div class="discount">20% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Men/3.webp" alt="tshirt" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">Men's Olive Tapered Shorts</div>
+                    <div class="price-row">
+                        <div class="price">₹349</div>
+                        <div class="old-price">₹699</div>
+                        <div class="discount">40% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Men/5.webp" alt="tshirt" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">Men's Solid Relaxed Fit Zip Front Denim Shacket</div>
+                    <div class="price-row">
+                        <div class="price">₹449</div>
+                        <div class="old-price">₹699</div>
+                        <div class="discount">30% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Men/6.webp" alt="Dress" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">Men's 512 Blue Slim Tapered Fit Mid Rise Jeans</div>
+                    <div class="price-row">
+                        <div class="price">₹249</div>
+                        <div class="old-price">₹499</div>
+                        <div class="discount">40% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Men/7.webp" alt="Dress" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">Men's Grey Tapered Shorts</div>
+                    <div class="price-row">
+                        <div class="price">₹149</div>
+                        <div class="old-price">₹399</div>
+                        <div class="discount">30% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Men/8.webp" alt="Dress" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">Men's 555 Blue Relaxed Straight Fit Mid Rise Jeans</div>
+                    <div class="price-row">
+                        <div class="price">₹449</div>
+                        <div class="old-price">₹799</div>
+                        <div class="discount">30% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Men/9.webp" alt="Dress" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">Men's Solid Slim Fit Polo T-shirt</div>
+                    <div class="price-row">
+                        <div class="price">₹249</div>
+                        <div class="old-price">₹499</div>
+                        <div class="discount">40% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="./Men/10.webp" alt="Red Dress" class="product-image">
+                <div class="wishlist">♡</div>
+
+                <div class="product-content">
+                    <div class="product-desc">Men's Solid Dark Brown Spread Collar Leather Jacket</div>
+                    <div class="price-row">
+                        <div class="price">₹649</div>
+                        <div class="old-price">₹1499</div>
+                        <div class="discount">30% OFF</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <!-- Top Logo + Description -->
+        <div class="footer-top-intro">
+            <img  src="/logo1.png" alt="Logo" />
+            <p>
+                Welcome to our clothing brand – where style meets affordability.
+                We believe fashion should be accessible to everyone, regardless of background.
+                Explore our collections curated for all walks of life.
+            </p>
+        </div>
+
+        <!-- 5 Sections -->
+        <div class="footer-sections">
+            <!-- Women -->
+            <div class="footer-column">
+                <h3>Women</h3>
+                <a href="#">Tops</a>
+                <a href="#">Ethnicwear</a>
+                <a href="#">Bottoms</a>
+                <a href="#">Dresses</a>
+                <a href="#">Winterwear</a>
+            </div>
+
+            <!-- Men -->
+            <div class="footer-column">
+                <h3>Men</h3>
+                <a href="#">Tops</a>
+                <a href="#">Bottoms</a>
+                <a href="#">Winterwear</a>
+                <a href="#">Innerwear</a>
+                <a href="#">Grooming</a>
+            </div>
+
+            <!-- Explore -->
+            <div class="footer-column">
+                <h3>Explore</h3>
+                <a href="#">Online Offers</a>
+                <a href="#">Store Offers</a>
+                <a href="#">Gift Cards</a>
+                <a href="#">Fashion VLOG</a>
+                <a href="#">SBI Offers</a>
+            </div>
+
+            <!-- About -->
+            <div class="footer-column">
+                <h3>About</h3>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Blog</a>
+                <a href="#">Our Mission</a>
+                <a href="#">Lifestyle Cares</a>
+            </div>
+
+            <!-- Help -->
+            <div class="footer-column">
+                <h3>Help</h3>
+                <a href="#">Contact Us</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">Help Centre</a>
+                <a href="#">Track Order</a>
+            </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="newsletter">
+            <h4>Subscribe to Our Newsletter</h4>
+            <form onsubmit="event.preventDefault(); alert('Subscribed successfully!')">
+                <input type="email" placeholder="Enter your email" required />
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <!-- Social Media -->
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            © 2025 DesiWear. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
