@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -402,7 +402,7 @@
     <footer>
         <!-- Top Logo + Description -->
         <div class="footer-top-intro">
-            <img  src="assets/image/logo1.webp" alt="Logo" />
+            <img src="assets/image/logo1.webp" alt="Logo" />
             <p>
                 Welcome to our clothing brand – where style meets affordability.
                 We believe fashion should be accessible to everyone, regardless of background.
@@ -487,6 +487,19 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+        // SLIDER
+        let slides = document.querySelectorAll(".slide");
+        let currentIndex = 0;
+
+        function showNextSlide() {
+            slides[currentIndex].classList.remove("active");
+            currentIndex = (currentIndex + 1) % slides.length;
+            slides[currentIndex].classList.add("active");
+        }
+
+        setInterval(showNextSlide, 6000);
+    </script>
 </body>
 
 </html>
