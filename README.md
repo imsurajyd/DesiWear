@@ -14,18 +14,19 @@ This is a basic Front-end website for DesiWear, featuring:
 
 ## 📁 Folder Structure
 DESIWEAR/
-│
 ├── index.html
 ├── offers.html
 ├── css/
-│ └── styles.css
+│   ├── styles.css
+│   └── offers.css
 ├── js/
-│ └── script.js
+│   ├── script.js
+│   └── offers.js
 ├── assets/
-│ └── images/
+│   └── images/
 ├── products/
-│ ├── men/
-│ └── women/
+│   ├── men/
+│   └── women/
 └── README.md
 
 
