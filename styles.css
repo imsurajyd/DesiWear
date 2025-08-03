@@ -288,6 +288,12 @@ a {
     font-size: 30px;
     cursor: pointer;
 }
+.wishlist:hover {
+    color: #e53935;
+}
+.wishlist:active {
+    color: #e53935;
+}
 
 .product-desc {
     font-size: 14px;
